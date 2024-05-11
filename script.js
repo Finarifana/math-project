@@ -12,11 +12,18 @@ function handleGCDFormSubmit(event) {
     var num1 = parseInt(document.getElementById('gcdNum1').value);
     var num2 = parseInt(document.getElementById('gcdNum2').value);
     var gcd = calculateGCD(num1, num2);
-    document.getElementById('gcdResult').innerHTML = "GCD (PBB) of " + num1 + " and " + num2 + " is: " + gcd;
+    document.getElementById('gcdResult').innerHTML = "GCD (PBB) dari " + num1 + " dan " + num2 + " adalah: " + gcd;
 }
 
 // Menangani pengiriman formulir GCD
 document.getElementById('gcdForm').addEventListener('submit', handleGCDFormSubmit);
+
+// Fungsi untuk membersihkan input GCD
+function clearGCD() {
+    document.getElementById('gcdNum1').value = '';
+    document.getElementById('gcdNum2').value = '';
+    document.getElementById('gcdResult').innerHTML = '';
+}
 
 // Fungsi untuk menghitung LCD (KPK)
 function calculateLCD(a, b) {
@@ -29,8 +36,15 @@ function handleLCDFormSubmit(event) {
     var num1 = parseInt(document.getElementById('lcdNum1').value);
     var num2 = parseInt(document.getElementById('lcdNum2').value);
     var lcd = calculateLCD(num1, num2);
-    document.getElementById('lcdResult').innerHTML = "LCD (KPK) of " + num1 + " and " + num2 + " is: " + lcd;
+    document.getElementById('lcdResult').innerHTML = "LCD (KPK) dari " + num1 + " dan " + num2 + " adalah: " + lcd;
 }
 
 // Menangani pengiriman formulir LCD
 document.getElementById('lcdForm').addEventListener('submit', handleLCDFormSubmit);
+
+// Fungsi untuk membersihkan input LCD
+function clearLCD() {
+    document.getElementById('lcdNum1').value = '';
+    document.getElementById('lcdNum2').value = '';
+    document.getElementById('lcdResult').innerHTML = '';
+}
