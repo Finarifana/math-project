@@ -7,49 +7,53 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Kalkulator GCD dan LCD</h1>
-    
-    <!-- Form untuk memasukkan bilangan untuk GCD -->
-    <h2>Kalkulator GCD (PBB)</h2>
-    <form id="gcdForm">
-        <label for="gcdNum1">Masukkan bilangan pertama:</label>
-        <input type="number" id="gcdNum1" required>
-        <br>
-        <label for="gcdNum2">Masukkan bilangan kedua:</label>
-        <input type="number" id="gcdNum2" required>
-        <br>
-        <button type="submit">Hitung GCD</button>
-        <button type="button" onclick="clearGCD()">Clear</button>
-    </form>
-    
-    <!-- Tempat untuk menampilkan hasil perhitungan GCD -->
-    <div id="gcdResult"></div>
+    <div class="container">
+        <h1>Kalkulator GCD dan LCD</h1>
+        
+        <!-- Form untuk memasukkan bilangan untuk GCD -->
+        <div class="calculator">
+            <h2>Kalkulator GCD (PBB)</h2>
+            <form id="gcdForm">
+                <label for="gcdNum1">Masukkan bilangan pertama:</label>
+                <input type="number" id="gcdNum1" required>
+                <br>
+                <label for="gcdNum2">Masukkan bilangan kedua:</label>
+                <input type="number" id="gcdNum2" required>
+                <br>
+                <button type="submit">Hitung GCD</button>
+                <button type="button" onclick="clearGCD()">Clear</button>
+            </form>
+            
+            <!-- Tempat untuk menampilkan hasil perhitungan GCD -->
+            <div id="gcdResult"></div>
+        </div>
 
-    <!-- Informasi mengenai GCD -->
-    <h3>Apa itu GCD?</h3>
-    <p><strong>Greatest Common Divisor (GCD)</strong> dari dua bilangan adalah bilangan bulat terbesar yang dapat membagi habis kedua bilangan tersebut. GCD sering digunakan dalam matematika, algoritma, dan pemrograman komputer.</p>
-    <p>Contoh: GCD dari 12 dan 18 adalah 6, karena 6 adalah bilangan bulat terbesar yang dapat membagi habis kedua bilangan tersebut.</p>
+        <!-- Form untuk memasukkan bilangan untuk LCD -->
+        <div class="calculator">
+            <h2>Kalkulator LCD (KPK)</h2>
+            <form id="lcdForm">
+                <label for="lcdNum1">Masukkan bilangan pertama:</label>
+                <input type="number" id="lcdNum1" required>
+                <br>
+                <label for="lcdNum2">Masukkan bilangan kedua:</label>
+                <input type="number" id="lcdNum2" required>
+                <br>
+                <button type="submit">Hitung LCD</button>
+                <button type="button" onclick="clearLCD()">Clear</button>
+            </form>
+            
+            <!-- Tempat untuk menampilkan hasil perhitungan LCD -->
+            <div id="lcdResult"></div>
+        </div>
 
-    <!-- Form untuk memasukkan bilangan untuk LCD -->
-    <h2>Kalkulator LCD (KPK)</h2>
-    <form id="lcdForm">
-        <label for="lcdNum1">Masukkan bilangan pertama:</label>
-        <input type="number" id="lcdNum1" required>
-        <br>
-        <label for="lcdNum2">Masukkan bilangan kedua:</label>
-        <input type="number" id="lcdNum2" required>
-        <br>
-        <button type="submit">Hitung LCD</button>
-        <button type="button" onclick="clearLCD()">Clear</button>
-    </form>
-    
-    <!-- Tempat untuk menampilkan hasil perhitungan LCD -->
-    <div id="lcdResult"></div>
-
-    <!-- Informasi mengenai LCD -->
-    <h3>Apa itu LCD?</h3>
-    <p><strong>Least Common Multiple (LCD)</strong> dari dua bilangan adalah kelipatan terkecil dari kedua bilangan tersebut. LCD sering digunakan dalam matematika, terutama dalam menyelesaikan masalah yang melibatkan pecahan atau rasio.</p>
-    <p>Contoh: LCD dari 4 dan 6 adalah 12, karena 12 adalah kelipatan terkecil yang dapat dibagi oleh kedua bilangan tersebut.</p>
+        <!-- Informasi mengenai GCD dan LCD -->
+        <div class="info">
+            <h3>Apa itu GCD dan LCD?</h3>
+            <p><strong>Greatest Common Divisor (GCD)</strong> dari dua bilangan adalah bilangan bulat terbesar yang dapat membagi habis kedua bilangan tersebut. GCD sering digunakan dalam matematika, algoritma, dan pemrograman komputer.</p>
+            <p><strong>Least Common Multiple (LCD)</strong> dari dua bilangan adalah kelipatan terkecil dari kedua bilangan tersebut. LCD sering digunakan dalam matematika, terutama dalam menyelesaikan masalah yang melibatkan pecahan atau rasio.</p>
+            <p>Contoh: GCD dari 12 dan 18 adalah 6, karena 6 adalah bilangan bulat terbesar yang dapat membagi habis kedua bilangan tersebut. LCD dari 4 dan 6 adalah 12, karena 12 adalah kelipatan terkecil yang dapat dibagi oleh kedua bilangan tersebut.</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
