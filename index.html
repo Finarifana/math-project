@@ -1,56 +1,65 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator GCD dan LCD</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <h1>Kalkulator GCD dan LCD</h1>
-    
-    <!-- Form untuk memasukkan bilangan untuk GCD -->
-    <h2>Kalkulator GCD (PBB)</h2>
-    <form id="gcdForm">
-        <label for="gcdNum1">Masukkan bilangan pertama:</label>
-        <input type="number" id="gcdNum1" required>
-        <br>
-        <label for="gcdNum2">Masukkan bilangan kedua:</label>
-        <input type="number" id="gcdNum2" required>
-        <br>
-        <button type="submit">Hitung GCD</button>
-        <button type="button" onclick="clearGCD()">Clear</button>
-    </form>
-    
-    <!-- Tempat untuk menampilkan hasil perhitungan GCD -->
-    <div id="gcdResult"></div>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
 
-    <!-- Informasi mengenai GCD -->
-    <h3>Apa itu GCD?</h3>
-    <p><strong>Greatest Common Divisor (GCD)</strong> dari dua bilangan adalah bilangan bulat terbesar yang dapat membagi habis kedua bilangan tersebut. GCD sering digunakan dalam matematika, algoritma, dan pemrograman komputer.</p>
-    <p>Contoh: GCD dari 12 dan 18 adalah 6, karena 6 adalah bilangan bulat terbesar yang dapat membagi habis kedua bilangan tersebut.</p>
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    <!-- Form untuk memasukkan bilangan untuk LCD -->
-    <h2>Kalkulator LCD (KPK)</h2>
-    <form id="lcdForm">
-        <label for="lcdNum1">Masukkan bilangan pertama:</label>
-        <input type="number" id="lcdNum1" required>
-        <br>
-        <label for="lcdNum2">Masukkan bilangan kedua:</label>
-        <input type="number" id="lcdNum2" required>
-        <br>
-        <button type="submit">Hitung LCD</button>
-        <button type="button" onclick="clearLCD()">Clear</button>
-    </form>
-    
-    <!-- Tempat untuk menampilkan hasil perhitungan LCD -->
-    <div id="lcdResult"></div>
+.owner {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+}
 
-    <!-- Informasi mengenai LCD -->
-    <h3>Apa itu LCD?</h3>
-    <p><strong>Least Common Multiple (LCD)</strong> dari dua bilangan adalah kelipatan terkecil dari kedua bilangan tersebut. LCD sering digunakan dalam matematika, terutama dalam menyelesaikan masalah yang melibatkan pecahan atau rasio.</p>
-    <p>Contoh: LCD dari 4 dan 6 adalah 12, karena 12 adalah kelipatan terkecil yang dapat dibagi oleh kedua bilangan tersebut.</p>
+h1, h2, h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+input, button {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.calculator, .info {
+    margin-bottom: 40px;
+}
