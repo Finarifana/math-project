@@ -9,25 +9,46 @@
 <body>
     <h1>GCD and LCD Calculator</h1>
     
-    <!-- Form untuk memasukkan bilangan -->
-    <form id="gcdLcdForm">
-        <label for="num1">Enter first number:</label>
-        <input type="number" id="num1" required>
+    <!-- Form untuk memasukkan bilangan untuk GCD -->
+    <h2>GCD (PBB) Calculator</h2>
+    <form id="gcdForm">
+        <label for="gcdNum1">Enter first number:</label>
+        <input type="number" id="gcdNum1" required>
         <br>
-        <label for="num2">Enter second number:</label>
-        <input type="number" id="num2" required>
+        <label for="gcdNum2">Enter second number:</label>
+        <input type="number" id="gcdNum2" required>
         <br>
-        <button type="submit">Calculate GCD and LCD</button>
+        <button type="submit">Calculate GCD</button>
     </form>
     
-    <!-- Tempat untuk menampilkan hasil perhitungan -->
-    <div id="result"></div>
+    <!-- Tempat untuk menampilkan hasil perhitungan GCD -->
+    <div id="gcdResult"></div>
 
-    <!-- Informasi mengenai GCD dan LCD -->
-    <p><strong>Greatest Common Divisor (GCD)</strong> dari dua bilangan adalah bilangan bulat terbesar yang dapat membagi habis kedua bilangan tersebut. GCD sering digunakan dalam matematika, algoritma, dan pemrograman komputer.</p>
-    <p><strong>Least Common Multiple (LCD)</strong> dari dua bilangan adalah kelipatan terkecil dari kedua bilangan tersebut. LCD sering digunakan dalam matematika, terutama dalam menyelesaikan masalah yang melibatkan pecahan atau rasio.</p>
+    <!-- Informasi mengenai GCD -->
+    <h3>What is GCD?</h3>
+    <p><strong>Greatest Common Divisor (GCD)</strong> of two numbers is the largest integer that divides both numbers without leaving a remainder. GCD is often used in mathematics, algorithms, and computer programming.</p>
+    <p>Example: GCD of 12 and 18 is 6, because 6 is the largest integer that divides both numbers without leaving a remainder.</p>
+
+    <!-- Form untuk memasukkan bilangan untuk LCD -->
+    <h2>LCD (KPK) Calculator</h2>
+    <form id="lcdForm">
+        <label for="lcdNum1">Enter first number:</label>
+        <input type="number" id="lcdNum1" required>
+        <br>
+        <label for="lcdNum2">Enter second number:</label>
+        <input type="number" id="lcdNum2" required>
+        <br>
+        <button type="submit">Calculate LCD</button>
+    </form>
+    
+    <!-- Tempat untuk menampilkan hasil perhitungan LCD -->
+    <div id="lcdResult"></div>
+
+    <!-- Informasi mengenai LCD -->
+    <h3>What is LCD?</h3>
+    <p><strong>Least Common Multiple (LCD)</strong> of two numbers is the smallest multiple that both numbers share. LCD is often used in mathematics, especially in solving problems involving fractions or ratios.</p>
+    <p>Example: LCD of 4 and 6 is 12, because 12 is the smallest multiple that both numbers share.</p>
 
     <script src="script.js"></script>
 </body>
 </html>
-
