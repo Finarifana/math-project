@@ -13,6 +13,7 @@ body {
 
 h1, h2, h3 {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 label {
@@ -37,6 +38,7 @@ p {
 
 .calculator h2 {
     margin-top: 0;
+    text-align: center;
 }
 
 .calculator input {
@@ -54,6 +56,8 @@ p {
     border-radius: 3px;
     color: #fff;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 .calculator button:hover {
@@ -64,6 +68,7 @@ p {
     background-color: #673ab7;
     padding: 20px;
     border-radius: 5px;
+    text-align: justify;
 }
 
 .info h3 {
