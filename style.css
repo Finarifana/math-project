@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #6a1b9a;
+    background-color: #d1c4e9; /* Warna ungu pastel */
     color: #fff;
 }
 
@@ -30,7 +30,7 @@ p {
 }
 
 .calculator {
-    background-color: #9c27b0;
+    background-color: #ba68c8; /* Warna ungu pastel */
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -51,7 +51,7 @@ p {
 
 .calculator button {
     padding: 8px 15px;
-    background-color: #4a148c;
+    background-color: #7b1fa2; /* Warna ungu tua */
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -61,11 +61,11 @@ p {
 }
 
 .calculator button:hover {
-    background-color: #7b1fa2;
+    background-color: #9c27b0; /* Warna ungu sedikit lebih terang saat hover */
 }
 
 .info {
-    background-color: #673ab7;
+    background-color: #9c27b0; /* Warna ungu sedikit lebih terang */
     padding: 20px;
     border-radius: 5px;
     text-align: justify;
