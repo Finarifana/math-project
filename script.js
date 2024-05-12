@@ -24,7 +24,6 @@ function clearGCD() {
     document.getElementById('gcdNum2').value = '';
     document.getElementById('gcdResult').innerHTML = '';
 }
-
 // Fungsi untuk menghitung LCM (KPK)
 function calculateLCM(a, b) {
     return (a * b) / calculateGCD(a, b);
