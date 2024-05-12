@@ -25,26 +25,26 @@ function clearGCD() {
     document.getElementById('gcdResult').innerHTML = '';
 }
 
-// Fungsi untuk menghitung LCD (KPK)
-function calculateLCD(a, b) {
+// Fungsi untuk menghitung LCM (KPK)
+function calculateLCM(a, b) {
     return (a * b) / calculateGCD(a, b);
 }
 
-// Fungsi untuk menangani pengiriman formulir LCD
-function handleLCDFormSubmit(event) {
+// Fungsi untuk menangani pengiriman formulir LCM
+function handleLCMFormSubmit(event) {
     event.preventDefault(); // Menghentikan perilaku default formulir (refresh halaman)
-    var num1 = parseInt(document.getElementById('lcdNum1').value);
-    var num2 = parseInt(document.getElementById('lcdNum2').value);
-    var lcd = calculateLCD(num1, num2);
-    document.getElementById('lcdResult').innerHTML = "LCD (KPK) dari " + num1 + " dan " + num2 + " adalah: " + lcd;
+    var num1 = parseInt(document.getElementById('lcmNum1').value);
+    var num2 = parseInt(document.getElementById('lcmNum2').value);
+    var lcm = calculateLCM(num1, num2);
+    document.getElementById('lcmResult').innerHTML = "LCM (KPK) dari " + num1 + " dan " + num2 + " adalah: " + lcm;
 }
 
-// Menangani pengiriman formulir LCD
-document.getElementById('lcdForm').addEventListener('submit', handleLCDFormSubmit);
+// Menangani pengiriman formulir LCM
+document.getElementById('lcmForm').addEventListener('submit', handleLCMFormSubmit);
 
-// Fungsi untuk membersihkan input LCD
+// Fungsi untuk membersihkan input LCM
 function clearLCD() {
-    document.getElementById('lcdNum1').value = '';
-    document.getElementById('lcdNum2').value = '';
-    document.getElementById('lcdResult').innerHTML = '';
+    document.getElementById('lcmNum1').value = '';
+    document.getElementById('lcmNum2').value = '';
+    document.getElementById('lcmResult').innerHTML = '';
 }
