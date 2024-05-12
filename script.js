@@ -24,6 +24,7 @@ function clearGCD() {
     document.getElementById('gcdNum2').value = '';
     document.getElementById('gcdResult').innerHTML = '';
 }
+
 // Fungsi untuk menghitung LCM (KPK)
 function calculateLCM(a, b) {
     return (a * b) / calculateGCD(a, b);
@@ -42,7 +43,7 @@ function handleLCMFormSubmit(event) {
 document.getElementById('lcmForm').addEventListener('submit', handleLCMFormSubmit);
 
 // Fungsi untuk membersihkan input LCM
-function clearLCD() {
+function clearLCM() {
     document.getElementById('lcmNum1').value = '';
     document.getElementById('lcmNum2').value = '';
     document.getElementById('lcmResult').innerHTML = '';
